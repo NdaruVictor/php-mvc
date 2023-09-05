@@ -2,7 +2,7 @@
 
 class Siswa_model
 {
-    private $table = 'siswa';
+    private $table = 'data_siswa';
     private $db;
 
     public function __construct()
@@ -26,11 +26,11 @@ class Siswa_model
 
     public function tambahData($data)
     {
-        $query = " INSERT INTO siswa VALUES
-        (NULL, :nama, :jns_kelamin, :alamat ) ";
+        $query = " INSERT INTO data_siswa VALUES
+        (NULL, :nama, :jenis_kelamin, :alamat ) ";
         $this->db->query($query);
         $this->db->bind('nama', $data['nama']);
-        $this->db->bind('jns_kelamin', $data['jns_kelamin']);
+        $this->db->bind('jenis_kelamin', $data['jenis_kelamin']);
         $this->db->bind('alamat', $data['alamat']);
         $this->db->execute();
         return $this->db->rowCount();
@@ -38,13 +38,13 @@ class Siswa_model
 
     public function editDataSiswa($data)
     {
-        $query = "UPDATE siswa SET
+        $query = "UPDATE data_siswa SET
         nama = :nama,
-        jns_kelamin = :jns_kelamin,
+        jenis_kelamin = :jenis_kelamin,
         alamat = :alamat WHERE id = :id";
         $this->db->query($query);
         $this->db->bind('nama', $data['nama']);
-        $this->db->bind('jns_kelamin', $data['jns_kelamin']);
+        $this->db->bind('jenis_kelamin', $data['jenis_kelamin']);
         $this->db->bind('alamat', $data['alamat']);
         $this->db->bind('id', $data['id']);
         $this->db->execute();
@@ -54,7 +54,7 @@ class Siswa_model
 
     public function delete($id)
     {
-        $query = "DELETE FROM siswa WHERE id = :id";
+        $query = "DELETE FROM data_siswa WHERE id = :id";
 
         $this->db->query($query);
         $this->db->bind('id', $id);

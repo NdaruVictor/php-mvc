@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container mt-5" style="min-height: 100vh;">
     <div class="row">
         <div class="col-6">
 
@@ -7,24 +7,30 @@
                     <?php Flasher::flash(); ?>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary tombolTambahData " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary tombolTambahData " data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 Tambah Data Siswa
             </button>
 
 
             <h3 class="mt-4">Data Siswa</h3>
             <?php foreach ($data['siswa'] as $siswa) : ?>
-                <ul class="list-group my-2">
-                    <li class="list-group-item list-group-item d-flex justify-content-between align-items-center">
-                        <?= $siswa['nama']; ?>
+            <ul class="list-group my-2">
+                <li class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+                    <?= $siswa['nama']; ?>
 
-                        <div class="d-flex ">
-                            <a href="<?= BASE_URL; ?>/datasiswa/show/<?= $siswa['id']; ?>" class="badge bg-primary" style="text-decoration: none; color: white;">detail</a>
-                            <a href="<?= BASE_URL; ?>/datasiswa/edit/<?= $siswa['id']; ?>" class="badge bg-success tampilModalUbah mx-2" style="text-decoration: none; color: white;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="<?= $siswa['id']; ?>">ubah</a>
-                            <a href="<?= BASE_URL; ?>/datasiswa/delete/<?= $siswa['id']; ?>" class="badge bg-danger" style="text-decoration: none; color: white;" onClick="return confirm('yakin');">hapus</a>
-                        </div>
-                    </li>
-                </ul>
+                    <div class="d-flex ">
+                        <a href="<?= BASE_URL; ?>/datasiswa/show/<?= $siswa['id']; ?>" class="badge bg-primary"
+                            style="text-decoration: none; color: white;">detail</a>
+                        <a href="<?= BASE_URL; ?>/datasiswa/edit/<?= $siswa['id']; ?>"
+                            class="badge bg-success tampilModalUbah mx-2" style="text-decoration: none; color: white;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-id="<?= $siswa['id']; ?>">ubah</a>
+                        <a href="<?= BASE_URL; ?>/datasiswa/delete/<?= $siswa['id']; ?>" class="badge bg-danger"
+                            style="text-decoration: none; color: white;" onClick="return confirm('yakin');">hapus</a>
+                    </div>
+                </li>
+            </ul>
             <?php endforeach; ?>
         </div>
     </div>
@@ -53,8 +59,8 @@
                         <input type="text" class="form-control" id="nama" name="nama">
                     </div>
                     <div class="form-group">
-                        <label for="jns_kelamin">Jenis Kelamin</label>
-                        <select class="form-control" id="jns_kelamin" name="jns_kelamin">
+                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                        <select class="form-control" id="jenis_kelamin" name="jenis_kelamin">
                             <option value="L">Laki - laki</option>
                             <option value="P">Perempuan</option>
                         </select>

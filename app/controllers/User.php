@@ -11,7 +11,7 @@ class User extends Controller
         $this->view('templates/footer');
     }
 
-    public function profile($name = "Fitra Maulana", $pekerjaan = "Pelajar")
+    public function profile($name = "Ndaru Victor", $pekerjaan = "Pelajar")
     {
         $data['judul'] = "About Me";
         $data['name'] = $name;
