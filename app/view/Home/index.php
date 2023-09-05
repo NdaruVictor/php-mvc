@@ -55,10 +55,3 @@
         </div>
     </div>
 </div>
-<div class="d-flex justify-content-center">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.4446869103876!2d111.71097837500778!3d-8.056040091971452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e791b2b0606b7a5%3A0x4a928b26bb669a9b!2sSMKN%202%20Trenggalek!5e0!3m2!1sid!2sid!4v1693901015772!5m2!1sid!2sid"
-        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-<br>

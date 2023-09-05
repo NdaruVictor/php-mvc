@@ -1,7 +1,7 @@
-<div class="container justify-content-center align-items-center flex-column d-flex my-4">
+<div class="container justify-content-center align-items-center flex-column d-flex my-4" style="min-height: 100vh;">
 
     <h3>About Me</h3>
-    <img src="<?= BASE_URL; ?>/img/OK cat.jpeg" class="my-4" style="border-radius: 100%; width: auto; height: 350px;"
+    <img src=" <?= BASE_URL; ?>/img/OK cat.jpeg" class="my-4" style="border-radius: 100%; width: auto; height: 350px;"
         alt="" srcset="">
     <h5 class="fw-light">Halo, nama saya <?= $data['name']; ?>, saya seorang <?= $data['pekerjaan']; ?></h5>
 </div>

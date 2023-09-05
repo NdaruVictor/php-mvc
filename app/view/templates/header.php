@@ -31,12 +31,19 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle fw-bold" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="true">
-                            Dropdown
+                            Kompetensi Keahlian
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Kuliner</a></li>
-                            <li><a class="dropdown-item" href="#">Rekayasa Perangkat Lunak</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="<?= BASE_URL; ?>/kuliner">Kuliner</a></li>
+                            <li><a class="dropdown-item" href="<?= BASE_URL; ?>/rpl">Rekayasa Perangkat Lunak</a></li>
+                            <li><a class="dropdown-item" href="<?= BASE_URL; ?>/dpib">Design Pemodelan dan Informasi
+                                    Bangunan</a></li>
+                            <li><a class="dropdown-item" href="<?= BASE_URL; ?>/tptu">Teknik Pemanasan, Tata Udara dan
+                                    Pendinginan </a></li>
+                            <li><a class="dropdown-item" href="<?= BASE_URL; ?>/akuntansi">Akuntansi</a></li>
+                            <li><a class="dropdown-item" href="<?= BASE_URL; ?>/tkp">Teknik Kontruksi dan Perumahan</a>
+                            </li>
+                            <li><a class="dropdown-item" href="<?= BASE_URL; ?>/tp">Teknik Pengelasan</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
